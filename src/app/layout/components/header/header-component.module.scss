@@ -1,0 +1,46 @@
+.container {
+    width: 100%;
+    max-height: var(--default-layout-header-height);
+    padding-inline: 42rem;
+    line-height: 6rem;
+    border-bottom: 2px solid;
+    position: sticky;
+    top: 0;
+    left: 0;
+    .content {
+        font-family: 'Orbitron', sans-serif;
+        height: 6rem;
+        flex-direction: column;
+        max-width: var(--default-layout-width);
+        font-size: 1.6rem;
+        p {
+            font-size: clamp(2.8rem, 1.5vw, 3rem);
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .navbar{
+            max-height: var(--default-layout-header-height);
+            min-height: 60px;
+            width: 100%;
+            position: sticky;
+            z-index: 10;
+
+            .navbar-brand{
+                margin-right: 2rem;
+            }
+
+            .nav-link{
+                color: var(--white-color);
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+
+
+
